@@ -40,3 +40,4 @@ console.log(newStringOne.trim());
 
 
 
+let word = "hellow World"
