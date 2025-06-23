@@ -16,6 +16,28 @@
 // function
 
 
-console.log( typeof null ) //object
+const isObject = 
+{
+    name:"Abuzar",
+    age:"21"
 
-console.log( typeof undefined ) // undefined
+}
+
+
+const arr = [1,2,3,4]
+
+
+const myFunction = function(){
+    console.log("Hello world");
+}
+
+
+
+console.log( typeof isObject); // Object
+
+console.log( typeof arr); // Object
+
+console.log( typeof myFunction);  // Function
+
+
+
