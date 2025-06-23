@@ -33,11 +33,37 @@ const myFunction = function(){
 
 
 
-console.log( typeof isObject); // Object
+// console.log( typeof isObject); // Object
 
-console.log( typeof arr); // Object
+// console.log( typeof arr); // Object
 
-console.log( typeof myFunction);  // Function
+// console.log( typeof myFunction);  // Function
 
 
 
+// *************************************************** //
+
+
+// Stack Memory (Primitve) , Heap Memory  (Non-Primitive)
+
+
+let userEmail = "user@gmail.com"
+
+let userTwoEmail = userEmail
+
+userTwoEmail = "user@yahoo.com"
+
+console.table([userEmail, userTwoEmail]);
+
+let user = 
+
+{
+    name:"User",
+    email:"user@gmail.com"
+}
+
+let userTwo = user
+
+userTwo.email = "user@yahoo.com"
+
+console.table([ user.email, userTwo.email ]);
