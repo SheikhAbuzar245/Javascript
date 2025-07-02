@@ -38,15 +38,56 @@ let result = addNumbers(2,2)
 
 // console.log(userLoggedIn("Abuzar"))
 
-function userLoggedIn(username){
+// function userLoggedIn(username){
 
-    if(!username){
-        return "Please Enter a Username..."
-    }
+//     if(!username){
+//         return "Please Enter a Username..."
+//     }
 
-    return `${username} Loggedin.....`
+//     return `${username} Loggedin.....`
+
+// }
+
+
+// console.log(userLoggedIn())
+
+function calculateCartPrice(val1 ,val2 ,...num1){
+
+    return num1
 
 }
 
+console.log(calculateCartPrice(200, 400, 500, 2000));
 
-console.log(userLoggedIn())
+
+const user = {
+
+    username: "Abuzar",
+    age: "21"
+
+}
+
+function handleObject(anyObject){
+
+    console.log(`Username is ${anyObject.username} Age is ${anyObject.age}`);
+    
+
+}
+
+// handleObject(user)
+
+// handleObject({
+//     username: "Sheikh",
+//     age: "21"
+// })
+
+
+const myArr = [200,300,500]
+
+function handleArray(getArray){
+    return getArray[1]
+}
+
+
+console.log(handleArray(myArr));
+ 
