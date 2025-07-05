@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+        color: white;
+    }
+</style>
+<body>
+
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+
+
+
+<script>
+
+
+    function addLanguage(langName){
+        let li = document.createElement('li')
+        li.innerHTML = langName
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage('ruby')
+    addLanguage('python')
+
+
+    function addOptiLanguage(langName){
+        let li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptiLanguage("java")
+
+    // edit
+
+    let secondLang = document.querySelector('li:nth-child(2)')
+    let newLi = document.createElement('li')
+    newLi.textContent = "Go Lang"
+    secondLang.replaceWith(newLi)
+    console.log(secondLang);
+    
+    // edit
+
+    let firstLang = document.querySelector('li:nth-child(1)')
+    firstLang.outerHTML = '<li>Typescript</li>'
+
+
+    // remove
+
+    let lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>
+
+</body>
+</html>
