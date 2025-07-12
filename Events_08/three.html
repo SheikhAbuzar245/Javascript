@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Hellow World</h2>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+
+    <script>
+      let startBtn = document.getElementById("start");
+      let stopBtn = document.getElementById("stop");
+
+      let intervalId;
+
+      startBtn.addEventListener("click", () => {
+        const date = (str) => {
+          console.log(str, Date.now());
+        };
+        intervalId = setInterval(date, 1000, "Hi");
+      });
+
+      stopBtn.addEventListener("click", () => {
+        clearInterval(intervalId);
+      });
+    </script>
+  </body>
+</html>

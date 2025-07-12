@@ -7,5 +7,29 @@
 </head>
 <body>
     
+    <h2>Hellow World</h2>
+    <button id="stop">Stop</button>
+
+<script>
+     
+    let btn = document.getElementById('stop')
+
+    const greet = ()=>{
+        console.log("Hellow");  
+    }
+
+    const changeText = ()=>{
+            document.querySelector('h2').innerHTML = "JS Series"
+    }
+
+    const changeMe = setTimeout(changeText , 2000)
+
+    btn.addEventListener('click',()=>{
+         clearTimeout(changeMe)
+    })
+   
+
+</script>
+
 </body>
 </html>
